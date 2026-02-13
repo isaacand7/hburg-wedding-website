@@ -1,0 +1,39 @@
+{
+  "businessName": "Isaac Andreas Wedding Videography",
+  "location": "Harrisonburg, VA",
+  "ownerName": "Isaac Andreas",
+  "contactEmail": "isaacwandreas@gmail.com",
+  "tagline": "Cinematic wedding films that feel like your favorite memory.",
+  "ctaButtonText": "Request a Quote",
+  "startingPriceNote": "Custom packages available. Most couples invest between $X,XXX and $Y,YYY.",
+  "highlightVideos": [
+    {
+      "title": "Blue Ridge Mountain Vineyard Wedding",
+      "description": "An emotional, sun-soaked celebration in Virginia wine country.",
+      "thumbnail": "assets/blue-ridge-thumb.jpg",
+      "videoUrl": "https://your-video-link-1"
+    },
+    {
+      "title": "Downtown Harrisonburg Loft Wedding",
+      "description": "Intimate vows and a rooftop dance party under the stars.",
+      "thumbnail": "assets/harrisonburg-loft-thumb.jpg",
+      "videoUrl": "https://your-video-link-2"
+    },
+    {
+      "title": "Shenandoah Valley Barn Celebration",
+      "description": "Rustic charm, heartfelt speeches, and a packed dance floor.",
+      "thumbnail": "assets/shenandoah-barn-thumb.jpg",
+      "videoUrl": "https://your-video-link-3"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/yourhandle"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://youtube.com/@yourchannel"
+    }
+  ]
+}
