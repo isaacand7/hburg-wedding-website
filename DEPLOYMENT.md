@@ -93,6 +93,53 @@ Edit these files to customize:
 
 After editing, commit and push to GitHub, and Cloudflare will automatically redeploy.
 
+## How to update your site (Git + Cloudflare)
+
+After your site is already deployed, use these steps whenever you change files and want the live site to update.
+
+### Option A: Using GitHub’s website (no Git installed)
+
+1. Go to your repo on GitHub (e.g. `https://github.com/isaacand7/hburg-wedding-website`).
+2. Open the file you want to edit and click the **pencil icon** (Edit).
+3. Make your changes, then scroll down and click **Commit changes**.
+4. Cloudflare Pages will pick up the new commit and redeploy (usually 1–2 minutes). Check **Workers & Pages → your project → Deployments** to see status.
+
+To add or change multiple files: use **Add file → Upload files**, then commit.
+
+### Option B: Using Git on your computer
+
+1. **Open Terminal** and go to your project folder:
+   ```bash
+   cd /Users/isaac/IdeaProjects/VideoWebsite
+   ```
+
+2. **If this folder isn’t a Git repo yet**, set it up and link GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial website"
+   git branch -M main
+   git remote add origin https://github.com/isaacand7/hburg-wedding-website.git
+   git push -u origin main
+   ```
+   (Use your real repo URL if it’s different.)
+
+3. **When you’ve made changes** and want to update the live site:
+   ```bash
+   cd /Users/isaac/IdeaProjects/VideoWebsite
+   git add .
+   git status
+   git commit -m "Describe your change (e.g. Light grey borders, fix alignment)"
+   git push
+   ```
+
+4. Cloudflare will automatically build and deploy. Wait 1–2 minutes, then refresh your site.
+
+**Useful commands:**
+- `git status` — see which files changed
+- `git add .` — stage all changes (or use `git add path/to/file` for one file)
+- `git push` — send commits to GitHub (Cloudflare deploys from GitHub)
+
 ## Troubleshooting
 
 - **Domain not working?** Check DNS settings in Cloudflare dashboard. Make sure the domain is pointing to your Pages project.
