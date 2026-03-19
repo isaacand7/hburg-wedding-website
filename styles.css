@@ -704,6 +704,9 @@ body {
   line-height: 1.6;
   margin-bottom: 40px;
   max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .faq-list {
   margin-top: 0;
@@ -775,6 +778,33 @@ body {
 .contact-cta {
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-light);
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 10px;
+}
+
+.contact-small {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
 }
 
 /* Responsive */
