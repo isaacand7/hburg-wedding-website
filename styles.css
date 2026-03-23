@@ -833,4 +833,17 @@ body {
   .block-feature-copy {
     padding: 60px 20px;
   }
+
+  /* Prevent label/value overlap in "My filming approach" */
+  .info-list li {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .info-list li span.label,
+  .info-list li span.value {
+    width: 100%;
+  }
 }
